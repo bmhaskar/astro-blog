@@ -1,0 +1,141 @@
+/* the props */
+@import "open-props/style";
+@import "open-props/normalize";
+
+@custom-media --motionOK (prefers-reduced-motion: no-preference);
+
+:root {
+	--barnd: var(--teal-8);	
+
+	--brand-light: var(--lime-9);
+	--text1-light: var(--gray-8);
+	--text2-light: var(--gray-7);
+	--surface1-light: var(--gray-0);
+	--surface2-light: var(--gray-1);
+	--surface3-light: var(--gray-2);
+	--surface4-light: var(--gray-3);
+	--surface-shadow-light: 200 10% 20%;
+	--shadow-strength-light: 2%;
+	--link-visited: var(--lime-9);
+
+	/* dark */
+	--brand-dark: var(--teal-8);
+	--text1-dark: var(--gray-1);
+	--text2-dark: var(--gray-3);
+	--surface1-dark: var(--gray-9);
+	--surface2-dark: var(--gray-8);
+	--surface3-dark: var(--gray-7);
+	--surface4-dark: var(--gray-6);
+	--surface-shadow-dark: 200 50% 3%;
+	--shadow-strength-dark: 80%;
+}
+ 
+
+[color-scheme="light"] {
+	color-scheme: light;
+
+	--brand: var(--brand-light);
+	--text1: var(--text1-light);
+	--text2: var(--text2-light);
+	--surface1: var(--surface1-light);
+	--surface2: var(--surface2-light);
+	--surface3: var(--surface3-light);
+	--surface4: var(--surface4-light);
+	--surface-shadow: var(--surface-shadow-light);
+	--shadow-strength: var(--shadow-strength-light);
+    
+}
+
+[color-scheme="dark"] {
+	color-scheme: dark;
+  
+	--brand: var(--brand-dark);
+	--text1: var(--text1-dark);
+	--text2: var(--text2-dark);
+	--surface1: var(--surface1-dark);
+	--surface2: var(--surface2-dark);
+	--surface3: var(--surface3-dark);
+	--surface4: var(--surface4-dark);
+	--surface-shadow: var(--surface-shadow-dark);
+	--shadow-strength: var(--shadow-strength-dark);
+	
+ 
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ 
+html {
+	background-color: var(--surface1);
+	color: var(--text1);
+}
+body {	
+  font-family: "Cabin Condensed", var(--font-sans);
+  font-size: var(--font-size-fluid-1);
+  margin: 0;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Patua one", var(--font-sans);  
+  color: var(--text1);
+}
+
+a[href] {
+	color: var(--barnd);
+	text-decoration: none;
+}
+
+a[href]:visited {
+	color: var(--link-visited);
+}
+ 
+
+p {
+	font-size: var(--font-size-fluid-1);
+}
+
+h1 {
+  font-size: var(--font-size-8);
+  font-weight: var(--font-weight-8);
+}
+
+h2 {
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-6);
+}
+
+h3 {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-4);
+}
+
+h4 {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-weight-2);
+}
+
+h5 {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-1);
+}
+
+hr {
+	border: var(--border-size-1) solid var(--brand);
+	margin-block: var(--size-fluid-1);
+}
+
+code {
+	background-color: var(--surface4);
+}
+.container {
+  width: min(100% - 2rem, 50rem);
+  margin-inline: auto;
+}

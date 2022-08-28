@@ -1,0 +1,51 @@
+---
+import HeaderLink from "./HeaderLink.astro";
+import { SITE_TITLE } from "../config";
+import ThemeToggle from "./ThemeToggle/ThemeToggle.astro";
+---
+<header>
+	<div class="container">
+		<div class="title-wrapper">
+			<h2>
+				<a href="/">{SITE_TITLE}</a>
+			</h2>
+			<ThemeToggle />
+		</div>
+		<hr />
+		<nav>
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="https://twitter.com/bharatmhaskar" target="_blank"
+				>Twitter</HeaderLink
+			>
+			<HeaderLink href="https://github.com/bmhaskar" target="_blank"
+				>GitHub</HeaderLink
+			>
+		</nav>
+	</div>
+</header>
+<style>
+	header {
+		background-color: var(--surface2);
+		padding-block: var(--size-9);
+		margin-block-end: var(--size-8);
+		box-shadow: var(--shadow-1);
+		& .title-wrapper {
+			display: flex;
+			line-height: var(--size-7);
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+	h2 {
+		margin-block: var(--size-fluid-1);
+		font-weight: var(--font-weight-2);
+	}
+
+	nav {
+		display: flex;
+		gap: var(--size-3);
+	}
+</style>
