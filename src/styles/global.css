@@ -74,7 +74,7 @@ html {
 }
 body {	
   font-family: "Cabin Condensed", var(--font-sans);
-  font-size: var(--font-size-fluid-1);
+  font-size: var(--font-size-fluid-0);
   margin: 0;
 }
 
@@ -86,6 +86,7 @@ h4,
 h5 {
   font-family: "Patua one", var(--font-sans);  
   color: var(--text1);
+  max-inline-size:  var(--size-content-4);
 }
 
 a[href] {
@@ -99,7 +100,12 @@ a[href]:visited {
  
 
 p {
-	font-size: var(--font-size-fluid-1);
+	font-size: var(--font-size-fluid-0);
+	max-inline-size:  var(--size-content-5);
+}
+
+li,dd,figcaption {
+    max-inline-size: var(--size-content-5);
 }
 
 h1 {

@@ -3,6 +3,7 @@ import { Image } from '@astrojs/image/components';
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import  "../../src/styles/prism-material-dark.css";
 
 export interface Props {
 	content: {
@@ -26,7 +27,7 @@ const {
 <html>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} />		
 		<style>
 			.title {
 				font-size: var(--font-size-fluid-2);
@@ -49,8 +50,10 @@ const {
 				<div class="container">
 					{heroImage && (
 						<Image
-							class="heroimage"
-							src={import(heroImage)}
+							class="heroimage"							
+							height={700}
+							aspectRatio={1.1}
+							src={heroImage}
 							alt=""
 						/>
 					)}

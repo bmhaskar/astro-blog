@@ -12,11 +12,12 @@ import image from "@astrojs/image";
 export default defineConfig({
   site: "https://bmhaskar.com",
   markdown: {
-    drafts: true
+    drafts: true,
+    syntaxHighlight: 'prism',
   },
   integrations: [mdx({
     remarkPlugins: {
-      extends: [emoji, a11yEmoji, remarkRehype, rehypeStringify]
+      extends: [emoji, a11yEmoji, remarkRehype,  rehypeStringify]
     }
   }), sitemap(), image()],
   noExternal: ["open-props"]
