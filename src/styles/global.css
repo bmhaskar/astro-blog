@@ -78,6 +78,10 @@ body {
   margin: 0;
 }
 
+p,ul,ol,dl,h6 {
+	font-size: var(--font-size-fluid-0);
+}
+
 a,
 h1,
 h2,
