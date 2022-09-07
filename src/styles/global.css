@@ -96,6 +96,7 @@ a[href] {
 
 a[href]:visited {
 	color: var(--link-visited);
+	text-decoration: none;	
 }
  
 

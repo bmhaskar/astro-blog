@@ -1,7 +1,7 @@
 @import "./sun-and-moon.css";
      
 .theme-toggle {
-    /* --size: 2rem; */
+    --size: var(--size-6);
     --icon-fill: hsl(210 10% 30%);
     --icon-fill-hover: hsl(210 10% 15%);
 
