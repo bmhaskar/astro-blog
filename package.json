@@ -10,23 +10,25 @@
     "astro": "astro"
   },
   "devDependencies": {
-    "@astrojs/image": "^0.3.6",
-    "@astrojs/mdx": "^0.10.1",
-    "@astrojs/rss": "^1.0.0",
-    "@astrojs/sitemap": "^1.0.0",
-    "astro": "^1.0.8"
+    "@astrojs/image": "^0.3.7",
+    "@astrojs/mdx": "^0.10.3",
+    "@astrojs/rss": "^1.2.1",
+    "@astrojs/sitemap": "^1.2.2",
+    "astro": "^2.3.0"
   },
   "dependencies": {
+    "@astrojs/react": "^2.1.1",
+    "@astrojs/tailwind": "^3.1.1",
     "@fec/remark-a11y-emoji": "^3.1.0",
-    "autoprefixer": "^10.4.8",
-    "cssnano": "^5.1.13",
+    "@fontsource/cabin-condensed": "^4.5.9",
+    "@fontsource/patua-one": "^4.5.9",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^5.1.15",
+    "open-props": "^1.5.8",
     "postcss-hover-media-feature": "^1.0.2",
-    "postcss-preset-env": "^7.8.0",
+    "postcss-preset-env": "^7.8.3",
     "rehype-stringify": "^9.0.3",
-    "@fontsource/cabin-condensed": "^4.5.8",
-    "@fontsource/patua-one": "^4.5.8",
-    "open-props": "^1.4.14",
-    "remark-emoji": "^3.0.2",
+    "remark-emoji": "^3.1.1",
     "remark-rehype": "^10.1.0"
   }
 }
